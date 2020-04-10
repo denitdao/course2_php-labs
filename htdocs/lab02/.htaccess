@@ -1,0 +1,17 @@
+# Leverage Browser Caching
+<IfModule mod_headers.c>
+  Header set Connection keep-alive
+  <filesmatch "\.(ico|flv|jpg|jpeg|png|gif|css|swf|svg)$">
+  Header set Cache-Control "no-store"
+  </filesmatch>
+ <filesmatch "\.(html|htm)$">
+  Header set Cache-Control "no-store"
+  </filesmatch>
+  <filesmatch "\.(pdf)$">
+  Header set Cache-Control "no-store"
+  </filesmatch>
+  <filesmatch "\.(js)$">
+  Header set Cache-Control "no-store"
+  </filesmatch>
+</IfModule>
+#max-age=2678400
