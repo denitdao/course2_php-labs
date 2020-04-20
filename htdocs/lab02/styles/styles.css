@@ -19,22 +19,109 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/ebgaramond/v13/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkAI96.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Yeseva One Regular'), local('YesevaOne-Regular'), url(https://fonts.gstatic.com/s/yesevaone/v14/OpNJno4ck8vc-xYpwWWxpio.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Alegreya SC';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Alegreya SC Italic'), local('AlegreyaSC-Italic'), url(https://fonts.gstatic.com/s/alegreyasc/v11/taiMGmRtCJ62-O0HhNEa-Z6q2ZU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Alegreya SC';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Alegreya SC Medium Italic'), local('AlegreyaSC-MediumItalic'), url(https://fonts.gstatic.com/s/alegreyasc/v11/taiRGmRtCJ62-O0HhNEa-Z6q4WEySK8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Alegreya SC';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Alegreya SC Bold Italic'), local('AlegreyaSC-BoldItalic'), url(https://fonts.gstatic.com/s/alegreyasc/v11/taiRGmRtCJ62-O0HhNEa-Z6q4Sk0SK8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Alegreya SC';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Alegreya SC ExtraBold Italic'), local('AlegreyaSC-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/alegreyasc/v11/taiRGmRtCJ62-O0HhNEa-Z6q4TU3SK8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Alegreya SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Alegreya SC Regular'), local('AlegreyaSC-Regular'), url(https://fonts.gstatic.com/s/alegreyasc/v11/taiOGmRtCJ62-O0HhNEa-a6o.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Alegreya SC';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Alegreya SC Medium'), local('AlegreyaSC-Medium'), url(https://fonts.gstatic.com/s/alegreyasc/v11/taiTGmRtCJ62-O0HhNEa-ZZc-rUx.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Alegreya SC';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Alegreya SC Bold'), local('AlegreyaSC-Bold'), url(https://fonts.gstatic.com/s/alegreyasc/v11/taiTGmRtCJ62-O0HhNEa-ZYU_LUx.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Alegreya SC';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Alegreya SC ExtraBold'), local('AlegreyaSC-ExtraBold'), url(https://fonts.gstatic.com/s/alegreyasc/v11/taiTGmRtCJ62-O0HhNEa-ZYI_7Ux.ttf) format('truetype');
+}
+/*@shadow-dark-outer-normal: 0;
+@shadow-white-outer-normal: 0;
+@shadow-dark-inner-pressed: 0;
+@shadow-white-inner-pressed: 0;
+@shadow-dark-inner-normal: 0;
+@shadow-white-inner-normal: 0;
+@shadow-dark-outer-pressed: 0;
+@shadow-white-outer-pressed: 0;*/
 body {
   margin: 0;
-  font-family: Merriweather;
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: normal;
   color: #2D2A32;
-  background: linear-gradient(90deg, rgba(34, 116, 165, 0.08) 0%, rgba(255, 255, 255, 0) 12%), linear-gradient(270deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 12%), #EBF1F7;
+  background: #F3F7FA;
 }
 @media (max-width: 576px) {
   body {
     margin: 0 3vw;
   }
 }
+.title,
+h2,
+h1 {
+  letter-spacing: 2px;
+}
+.thin {
+  font-family: 'Alegreya SC';
+}
 p {
   font-size: 20px;
   line-height: 150%;
+  font-weight: bolder;
   margin: 0;
 }
 h1 {
@@ -452,7 +539,10 @@ a {
 }
 .box-services .title h1 {
   align-self: center;
+  color: #2274a5;
   text-align: center;
+  font-family: 'Alegreya SC';
+  font-variant: small-caps;
 }
 .box-services .buttons {
   width: 100%;
@@ -470,11 +560,12 @@ a {
   min-height: 160px;
 }
 .box-services .button-plate h2 {
-  color: #2274a5;
   align-self: center;
+  font-weight: 400;
 }
 .box-services .button-plate p {
   font-size: 18px;
+  font-family: Montserrat;
   align-self: flex-start;
 }
 .box-services .button-plate .row {

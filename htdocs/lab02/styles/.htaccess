@@ -4,7 +4,7 @@
   <filesmatch "\.(ico|flv|jpg|jpeg|png|gif|css|swf|svg)$">
   Header set Cache-Control "no-store"
   </filesmatch>
- <filesmatch "\.(html|htm)$">
+  <filesmatch "\.(html|htm)$">
   Header set Cache-Control "no-store"
   </filesmatch>
   <filesmatch "\.(pdf)$">

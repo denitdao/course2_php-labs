@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap');
 
 @font-color: #2D2A32;
 @color-white: rgba(255, 255, 255, 0.3);
@@ -8,10 +11,18 @@
 @color-yellow: #FFCA3A;
 @color-orange: #FA8334;
 @color-green: #5FAD56;
-@color-background: #EBF1F7; //#EBF1F7
-@color-background-lite: #F3F7FA;
+@color-background: #F3F7FA; //#EBF1F7
+@color-background-lite: #F3F7FA; // F3F7FA
 
 @site-radius: 26px;
+/*@shadow-dark-outer-normal: 0;
+@shadow-white-outer-normal: 0;
+@shadow-dark-inner-pressed: 0;
+@shadow-white-inner-pressed: 0;
+@shadow-dark-inner-normal: 0;
+@shadow-white-inner-normal: 0;
+@shadow-dark-outer-pressed: 0;
+@shadow-white-outer-pressed: 0;*/
 @shadow-dark-outer-normal: 6px 6px 16px rgba(34, 116, 165, 0.25);
 @shadow-white-outer-normal: -6px -6px 16px #FFFFFF;
 @shadow-dark-inner-pressed: 3px 3px 8px rgba(34, 116, 165, 0.07);
@@ -20,8 +31,6 @@
 @shadow-white-inner-normal: inset @shadow-white-inner-pressed;
 @shadow-dark-outer-pressed: inset @shadow-dark-outer-normal;
 @shadow-white-outer-pressed: inset @shadow-white-outer-normal;
-
-
 @margin-body-xs: 3vw;
 @margin-xs: 25px; //<576px
 @margin-sm: 30px; //≥576px
@@ -41,16 +50,25 @@ body {
     @media (max-width: 576px) {
         margin: 0 @margin-body-xs;
     }
-    font-family: Merriweather;
+    font-family: "Roboto Slab";
     font-style: normal;
     font-weight: normal;
     color: @font-color;
-    background: linear-gradient(90deg, rgba(34, 116, 165, 0.08) 0%, rgba(255, 255, 255, 0) 12%), linear-gradient(270deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 12%), @color-background;
+    background: @color-background; //linear-gradient(90deg, rgba(34, 116, 165, 0.08) 0%, rgba(255, 255, 255, 0) 12%), linear-gradient(270deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 12%)
+}
+
+.title, h2, h1 {
+    letter-spacing: 2px;
+}
+
+.thin {
+    font-family: 'Alegreya SC';
 }
 
 p {
     font-size: 20px;
     line-height: 150%;
+    font-weight: bolder;
     margin: 0;
 }
 
@@ -461,7 +479,10 @@ a {
         padding: 0 @padding-xs;
         h1 {
             align-self: center;
+            color: @color-blue;
             text-align: center;
+            font-family: 'Alegreya SC';
+            font-variant: small-caps;
         }
     }
     .buttons {
@@ -477,11 +498,13 @@ a {
         box-shadow: @shadow-dark-outer-normal, @shadow-white-outer-normal, @shadow-dark-inner-normal, @shadow-white-inner-normal;
         background: @color-background-lite;
         h2 {
-            color: @color-blue;
+            //color: @color-blue;
             align-self: center;
+            font-weight: 400;
         }
         p {
             font-size: 18px;
+            font-family: Montserrat;
             align-self: flex-start;
         }
         .row {
