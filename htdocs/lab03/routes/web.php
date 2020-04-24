@@ -14,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome', ['slogan'=>'My site']);
 });
-//Route::get('/', getSome());
+
+// Route::get( 'route' ,  'ControllerName@FunctionName' );
+Route::get( '/sign-in', 'UserController@show');// get without parameter
+
+Route::post( '/sign-in', 'UserController@check');
+
+Route::get( '/message/{name?}', 'MessageController@show');// get with parameter
+
+Route::get( '/product/{number?}', 'ProductController@show');// get with parameter
